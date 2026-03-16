@@ -1,0 +1,43 @@
+@import "tailwindcss";
+
+@theme {
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+}
+
+@layer utilities {
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  
+  .crt-flicker {
+    animation: flicker 0.15s infinite;
+  }
+
+  @keyframes flicker {
+    0% { opacity: 0.97; }
+    5% { opacity: 0.95; }
+    10% { opacity: 0.9; }
+    15% { opacity: 0.98; }
+    20% { opacity: 0.95; }
+    25% { opacity: 0.97; }
+    30% { opacity: 0.9; }
+    35% { opacity: 0.98; }
+    40% { opacity: 0.95; }
+    45% { opacity: 0.97; }
+    50% { opacity: 0.9; }
+    55% { opacity: 0.98; }
+    60% { opacity: 0.95; }
+    65% { opacity: 0.97; }
+    70% { opacity: 0.9; }
+    75% { opacity: 0.98; }
+    80% { opacity: 0.95; }
+    85% { opacity: 0.97; }
+    90% { opacity: 0.9; }
+    95% { opacity: 0.98; }
+    100% { opacity: 0.97; }
+  }
+}
